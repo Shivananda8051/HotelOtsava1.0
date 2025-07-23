@@ -1,4 +1,4 @@
-# HotelOtsava
+# HotelOtsava1.0
 
 HotelOtsava is a hotel listing platform built with React and Vite.
 
