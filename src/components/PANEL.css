@@ -1,0 +1,224 @@
+/* PANEL.css */
+.output-panel {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #2d2d3a;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-left: 1px solid #444;
+}
+
+.panel-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #444;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.panel-subtitle {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.analysis-btn {
+  flex: 1;
+  background-color: #3a3a4a;
+  color: #e0e0e0;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 100px;
+}
+
+.analysis-btn:hover {
+  background-color: #4a4a5a;
+  transform: translateY(-2px);
+}
+
+.analysis-btn.active {
+  background-color: #007acc;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 122, 204, 0.3);
+}
+
+.btn-icon {
+  font-size: 16px;
+}
+
+.output-container {
+  flex: 1;
+  background-color: #252531;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  overflow-y: auto;
+  border: 1px solid #444;
+}
+
+.loading-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #aaa;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-top: 4px solid #007acc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+.analysis-results {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.result-section {
+  background-color: #2d2d3a;
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid #007acc;
+}
+
+.result-section h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.language-tag {
+  display: inline-block;
+  background-color: #007acc;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.vulnerability-list, .recommendation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vulnerability-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: rgba(255, 87, 87, 0.1);
+  border-left: 3px solid #ff5757;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.line-number {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.vulnerability-detail {
+  flex: 1;
+}
+
+.severity-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ff5757;
+  border-radius: 50%;
+}
+
+.recommendation-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recommendation-item:last-child {
+  border-bottom: none;
+}
+
+.recommendation-bullet {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.no-issues {
+  color: #aaa;
+  font-style: italic;
+  padding: 10px 0;
+}
+
+.raw-output {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: monospace;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .output-panel {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .output-container {
+    height: 60vh;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .analysis-btn {
+    width: 100%;
+  }
+}
