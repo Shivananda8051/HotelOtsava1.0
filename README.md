@@ -74,7 +74,7 @@ Built with **Node.js**, **Express**, **MongoDB**, and **EJS**, it allows users t
    npm start
    ```
 
-   Visit: [http://localhost:8080](http://localhost:8080)
+   Visit: https://nammanest.onrender.com/listings
 
 ---
 
