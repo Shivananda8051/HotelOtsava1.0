@@ -1,7 +1,3 @@
-Got it — you want a **clear, concise GitHub project description** for your `NammaNest` app so people understand what it is, what it does, and how to run it.
-
-Based on your code, I’ll draft a **README**-style explanation:
-
 ---
 
 # 🏡 NammaNest
@@ -107,7 +103,3 @@ Built with **Node.js**, **Express**, **MongoDB**, and **EJS**, it allows users t
 This project is open source under the [MIT License](LICENSE).
 
 ---
-
-I can make this **README.md** file ready for your GitHub repo so that it looks professional and instantly tells visitors what NammaNest is about.
-
-Do you want me to prepare this as a **polished markdown file** you can directly paste into GitHub?
