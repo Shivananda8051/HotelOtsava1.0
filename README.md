@@ -96,11 +96,4 @@ Built with **Node.js**, **Express**, **MongoDB**, and **EJS**, it allows users t
 <img width="1901" height="1032" alt="image" src="https://github.com/user-attachments/assets/58cdd7e6-0a59-4f2b-a52d-7c13b5c7f3a9" />
 <img width="1919" height="969" alt="image" src="https://github.com/user-attachments/assets/76492ff2-d335-4e31-a914-b60e54412f68" />
 
-
----
-
-## 📜 License
-
-This project is open source under the [MIT License](LICENSE).
-
 ---
